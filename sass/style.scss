@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$fonts: "open-sans", sans-serif;
+
+body {
+    font-family: $fonts;
+}
+
+[class*="col-"] {
+    padding: 10px 0;
+}
