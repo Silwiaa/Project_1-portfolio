@@ -7,6 +7,10 @@ body {
     font-family: $fonts;
 }
 
+.gallery .container {
+    width: 950px;
+}
+
 [class*="col-"] {
     padding: 0;
 }
@@ -16,6 +20,24 @@ row::after {
     content: "";
     display: table;
     clear: both;
+}
+
+span {
+    font-style: italic;
+    font-size: 12px;
+}
+
+h4 {
+    margin: 0;
+}
+
+.gallery-content {
+    padding: 20px 40px;
+}
+
+.gallery-inside {
+    height: 250px;
+    position: relative;
 }
 
 .gallery img {
@@ -33,9 +55,11 @@ row::after {
         font-weight: bold;
         text-align: center;
         margin: 0 auto;
-        margin-top: 120px;
-        width: 100px
-    }
+        width: 100px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        }
     p {
         margin: 0;
     }
@@ -44,10 +68,7 @@ row::after {
 .layer {
 	width: 100%;
     height: 100%;
-    object-fit: cover;
     position: absolute;
-    top: 0;
-    left: 0;    
 }
 
  .layer:hover {
