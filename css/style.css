@@ -76,4 +76,16 @@ h4 {
   display: block;
 }
 
+@media (max-width: 768px) {
+  /* For tablets and smartphones: */
+  .layer {
+    position: static;
+    display: none;
+    cursor: auto;
+  }
+  .layer div {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
