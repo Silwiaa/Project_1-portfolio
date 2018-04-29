@@ -2,19 +2,22 @@
 
 $fonts: "open-sans", sans-serif;
 $gallery-color: #B49C76;
+$fa: #FED541;
+$smaller-font: 14px;
+$smaller-color: #A5A5A5;
 
 body {
     font-family: $fonts;
 }
 
-.gallery .container {
+.gallery .container,
+.services .container,
+.about-us .container {
     width: 950px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-
-[class*="col-"] {
-    padding: 0;
-}
-
+    
 row::before,
 row::after {
     content: "";
@@ -22,12 +25,51 @@ row::after {
     clear: both;
 }
 
-span {
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.services .h2-class {
+    margin-bottom: 100px;
+}
+
+.gallery .h2-class {
+    margin-bottom: 30px;
+}
+
+.services p,
+.about-us-p {
+    font-size: $smaller-font;
+    color: $smaller-color;
+}
+
+span,
+.h2-class p {
+    font-size: $smaller-font;
+    color: $smaller-color;
     font-style: italic;
-    font-size: 12px;
+}
+
+.fa {
+    border: 4px solid $fa;
+    border-radius: 50%;
+    padding: 10px;   
+    width: 100px;
+    height: 100px;
+    line-height: 75px;
+    color: $fa;
+    font-size: 50px;
+    margin-bottom: 15px;
 }
 
 h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.gallery h4,
+.about-us h4 {
     margin: 0;
 }
 
@@ -79,6 +121,62 @@ h4 {
 
 .layer:hover div {
 	display: block;    
+}
+
+.about-us h4 {
+    margin-top: 15px;
+}
+
+.about-us img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+    border-radius: 50%; 
+    border: 4px solid rgba(165, 165, 165, .6);
+}
+
+.about-us .row  {
+    padding: 50px 0;
+}
+
+.last-story {
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: $fa;
+    font-weight: bold;
+    border-radius: 50%;
+    padding-top: 45px; 
+    margin: 0 auto;
+    border: 4px solid rgba(165, 165, 165, .6);
+}
+
+.text-capitalize {
+    font-weight: bold;
+}
+
+.vertical-line::after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 100px;
+    background-color: rgba(165, 165, 165, .6);
+    position: absolute;
+    top: 200px;
+    left: 50%;
+}
+    
+
+@media (max-width: 768px) {
+    /* For tablets and smartphones: */
+    .layer {
+        position: static;
+        display: none;
+        cursor: auto;
+    }
+    .layer div {
+        display: block;
+    }
 }
 
 
