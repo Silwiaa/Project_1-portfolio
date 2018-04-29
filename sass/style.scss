@@ -2,18 +2,20 @@
 
 $fonts: "open-sans", sans-serif;
 $gallery-color: #B49C76;
+$fa: #FED541;
 
 body {
     font-family: $fonts;
 }
 
-.gallery .container {
+.gallery .container,
+.services .container,
+.about-us .container {
     width: 950px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
-
-[class*="col-"] {
-    padding: 0;
-}
+    
 
 row::before,
 row::after {
@@ -22,12 +24,38 @@ row::after {
     clear: both;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.h2-class {
+    margin-bottom: 50px;
+}
+
+.services p,
 span {
-    font-style: italic;
     font-size: 12px;
 }
 
-h4 {
+.fa {
+    border: 3px solid $fa;
+    border-radius: 50%;
+    padding: 10px;   
+    width: 60px;
+    height: 60px;
+    line-height: 35px;
+    color: $fa;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.services h4 {
+    margin-bottom: 10px;
+}
+
+.gallery h4,
+.about-us h4 {
     margin: 0;
 }
 
@@ -79,6 +107,34 @@ h4 {
 
 .layer:hover div {
 	display: block;    
+}
+
+.about-us h4 {
+    margin-top: 15px;
+}
+
+.image {
+    height: 200px;
+}
+
+.about-us img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+    border-radius: 50%; 
+}
+
+.
+@media (max-width: 768px) {
+    /* For tablets and smartphones: */
+    .layer {
+        position: static;
+        display: none;
+        cursor: auto;
+    }
+    .layer div {
+        display: block;
+    }
 }
 
 
