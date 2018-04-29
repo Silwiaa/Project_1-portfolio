@@ -113,15 +113,25 @@ span {
     margin-top: 15px;
 }
 
-.image {
-    height: 200px;
-}
-
 .about-us img {
 	width: 200px;
 	height: 200px;
 	object-fit: cover;
     border-radius: 50%; 
+}
+
+.about-us .row  {
+    padding: 40px 0;
+}
+
+.last-story {
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: $fa;
+    font-weight: bold;
+    border-radius: 50%;
+    vertical-align: middle; 
 }
 
 @media (max-width: 768px) {
