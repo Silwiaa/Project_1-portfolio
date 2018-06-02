@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 $fonts: "open-sans", sans-serif;
+$background-color: #F7F7F7;
 $gallery-color: #B49C76;
 $fa: #FED541;
 $smaller-font: 14px;
 $smaller-color: #A5A5A5;
+$headers: #292929;
+$neutral: white;
 
 body {
     font-family: $fonts;
+    background-color: $background-color;
 }
 
 .gallery .container,
@@ -28,6 +32,10 @@ row::after {
 h2 {
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.services {
+    background-color: $neutral;
 }
 
 .services .h2-class {
@@ -74,7 +82,12 @@ h4 {
 }
 
 .gallery-content {
-    padding: 20px 40px;
+    padding-top: 30px;
+}
+
+.gallery-description {
+    padding: 10px 0;
+    background-color: $neutral;
 }
 
 .gallery-inside {
