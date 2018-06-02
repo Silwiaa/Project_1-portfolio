@@ -14,12 +14,11 @@ body {
     background-color: $background-color;
 }
 
-.gallery .container,
-.services .container,
-.about-us .container {
-    width: 950px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+.gallery, 
+.about-us,
+.services {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
     
 row::before,
@@ -224,11 +223,13 @@ h4 {
 
 @media (max-width: 768px) {
     /* For tablets and smartphones: */
+    
     .layer {
         position: static;
         display: none;
         cursor: auto;
     }
+    
     .layer div {
         display: block;
     }
@@ -236,7 +237,6 @@ h4 {
     .vertical-line {
         display: none;
     }
-    `
 }
 
 
