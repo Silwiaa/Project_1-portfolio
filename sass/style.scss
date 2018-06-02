@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 $fonts: "open-sans", sans-serif;
-$background-color: #F7F7F7;
+$background-color: #F5F5F5;
 $gallery-color: #B49C76;
 $fa: #FED541;
 $smaller-font: 14px;
@@ -18,8 +18,8 @@ body {
 .services .container,
 .about-us .container {
     width: 950px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
     
 row::before,
@@ -47,7 +47,8 @@ h2 {
 }
 
 .services p,
-.about-us-p {
+.about-us-p,
+.team p {
     font-size: $smaller-font;
     color: $smaller-color;
 }
@@ -59,7 +60,7 @@ span,
     font-style: italic;
 }
 
-.fa {
+.services .fa {
     border: 4px solid $fa;
     border-radius: 50%;
     padding: 10px;   
@@ -79,6 +80,10 @@ h4 {
 .gallery h4,
 .about-us h4 {
     margin: 0;
+}
+
+.about-us {
+    background-color: $neutral;
 }
 
 .gallery-content {
@@ -178,7 +183,44 @@ h4 {
     top: 200px;
     left: 50%;
 }
-    
+
+.team img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid $headers;
+}
+
+.team-img {
+    text-align: center;
+}
+
+.team-content {
+    padding: 50px;
+}
+
+.team-description {
+    padding: 15px 5px;
+}
+
+.team-social_media .fa {
+    font-size: 25px;
+    border-radius: 50%;
+    border: 2px solid $headers;
+    padding: 10px;
+    width: 50px;
+}
+
+.logo {
+    height: 250px;
+}
+
+.logo img {
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 
 @media (max-width: 768px) {
     /* For tablets and smartphones: */
@@ -190,6 +232,11 @@ h4 {
     .layer div {
         display: block;
     }
+    
+    .vertical-line {
+        display: none;
+    }
+    `
 }
 
 
