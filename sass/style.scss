@@ -9,6 +9,7 @@ $smaller-color: #A5A5A5;
 $headers: #292929;
 $neutral: white;
 $social-fa: #F9F9F9;
+$dark-background-font: #FDFDFD;
 
 body {
     font-family: $fonts;
@@ -18,8 +19,7 @@ body {
 .gallery, 
 .about-us,
 .services, 
-.team,
-.media {
+.team {
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -169,7 +169,7 @@ h4 {
 .last-story {
     width: 200px;
     height: 200px;
-    color: white;
+    color: &neutral;
     background-color: $fa;
     font-weight: bold;
     border-radius: 50%;
@@ -232,6 +232,37 @@ h4 {
 	height: 50px;
 	object-fit: contain;
     filter: grayscale(100%);
+}
+
+.contact-us {
+    background-image: url(http://40chtv.com/wp-content/uploads/2018/02/Maps-World-Map-Black-World-Map.jpg);
+}
+
+.h2-class h2 {
+    color: $dark-background-font;
+    padding-top: 15px;
+}
+
+button {
+    display: block;
+    margin: 5px auto 60px auto;
+    text-align: center;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    background-color: $fa;
+    color: $neutral;
+    font-weight: bold; 
+    text-transform: uppercase;
+    
+}
+
+.contact-us .row {
+   padding: 40px 15px;
+}
+
+footer {
+    margin: 40px auto;
 }
 
 .social .fa {
