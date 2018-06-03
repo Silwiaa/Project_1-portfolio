@@ -4,10 +4,11 @@ $fonts: "open-sans", sans-serif;
 $background-color: #F5F5F5;
 $gallery-color: #B49C76;
 $fa: #FED541;
-$smaller-font: 14px;
+$smaller-font: 16px;
 $smaller-color: #A5A5A5;
 $headers: #292929;
 $neutral: white;
+$social-fa: #F9F9F9;
 
 body {
     font-family: $fonts;
@@ -16,9 +17,17 @@ body {
 
 .gallery, 
 .about-us,
-.services {
+.services, 
+.team,
+.media {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.container-fluid,
+.media .row{
+    max-width: 950px;
+    margin: 0 auto;
 }
     
 row::before,
@@ -47,7 +56,8 @@ h2 {
 
 .services p,
 .about-us-p,
-.team p {
+.team p,
+footer p {
     font-size: $smaller-font;
     color: $smaller-color;
 }
@@ -176,7 +186,7 @@ h4 {
     content: '';
     display: block;
     width: 4px;
-    height: 100px;
+    height: 130px;
     background-color: rgba(165, 165, 165, .6);
     position: absolute;
     top: 200px;
@@ -211,14 +221,32 @@ h4 {
     width: 50px;
 }
 
-.logo {
-    height: 250px;
+.media {
+    background-color: $neutral;
+    margin-top: 50px;
+    padding: 60px 15px;
 }
 
 .logo img {
     width: 100%;
-	height: 100%;
-	object-fit: cover;
+	height: 50px;
+	object-fit: contain;
+    filter: grayscale(100%);
+}
+
+.social .fa {
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: $headers;
+    color: $social-fa;
+    padding: 10px;
+    margin: 15px 5px;
+    width: 50px;
+}
+
+footer p,
+footer div {
+    text-align: center;
 }
 
 @media (max-width: 768px) {
