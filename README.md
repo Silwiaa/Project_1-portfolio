@@ -1,3 +1,3 @@
-https://silwiaa.github.io/Project_1-portfolio/
+ https://silwiaa.github.io/Zadanie-7.7---Landing-page/
 
 Remember to compile your SCSS code into CSS code.
