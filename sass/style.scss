@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+$nav_background: #323136;
 $fonts: "open-sans", sans-serif;
 $background-color: #F5F5F5;
 $gallery-color: #B49C76;
@@ -14,6 +15,34 @@ $dark-background-font: #FDFDFD;
 body {
     font-family: $fonts;
     background-color: $background-color;
+}
+
+nav {
+    background-color: $nav_background;
+    position: relative;
+}
+
+nav {
+    ul {
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        text-decoration: none;
+        float: right;
+        padding: 10px;
+    }
+    a {
+        color: $dark-background-font;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 50px;
+    }
+    img {
+        margin-top: 15px;
+        position: absolute;
+        
+    }
 }
 
 .gallery, 
@@ -198,7 +227,7 @@ h4 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 4px solid $headers;
+    border: 4px solid rgba(165, 165, 165, .6);
 }
 
 .team-img {
@@ -238,7 +267,7 @@ h4 {
     background-image: url(http://40chtv.com/wp-content/uploads/2018/02/Maps-World-Map-Black-World-Map.jpg);
 }
 
-.h2-class h2 {
+.contact-us .h2-class h2 {
     color: $dark-background-font;
     padding-top: 15px;
 }
@@ -254,6 +283,7 @@ button {
     color: $neutral;
     font-weight: bold; 
     text-transform: uppercase;
+    border: none;
     
 }
 
@@ -262,7 +292,9 @@ button {
 }
 
 footer {
-    margin: 40px auto;
+    margin: 0px auto 40px auto;
+    background-color: $neutral;
+    padding-top: 30px;
 }
 
 .social .fa {
