@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text|Open+Sans');
 
-$nav_background: #323136;
-$fonts: "open-sans", sans-serif;
+$nav_background: #191814;
+$fonts: 'Open Sans', sans-serif;
 $background-color: #F5F5F5;
 $gallery-color: #B49C76;
 $fa: #FED541;
@@ -41,8 +41,40 @@ nav {
     img {
         margin-top: 15px;
         position: absolute;
-        
     }
+}
+
+header {
+    background-image: url(https://images.pexels.com/photos/226003/pexels-photo-226003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    object-fit: fill;
+    text-align: center;
+    height: 100vh;
+}
+
+.header-p {
+    margin-top: 25vh;
+}
+
+header button {
+    margin-top: 30px;
+}
+
+.header-p p {
+    color: $dark-background-font;
+    padding: 10px;
+}
+
+.header-p p:first-child {
+    text-transform: capitalize;
+    font-size: 46px;
+    font-style: italic;
+    font-family: 'Noticia Text', serif;
+}
+
+.header-p p:nth-child(even) {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 74px;
 }
 
 .gallery, 
@@ -54,7 +86,7 @@ nav {
 }
 
 .container-fluid,
-.media .row{
+.media .row {
     max-width: 950px;
     margin: 0 auto;
 }
@@ -84,7 +116,7 @@ h2 {
 }
 
 .services p,
-.about-us-p,
+.about-us p,
 .team p,
 footer p {
     font-size: $smaller-font;
@@ -198,7 +230,7 @@ h4 {
 .last-story {
     width: 200px;
     height: 200px;
-    color: &neutral;
+    color: $neutral;
     background-color: $fa;
     font-weight: bold;
     border-radius: 50%;
@@ -276,9 +308,9 @@ button {
     display: block;
     margin: 5px auto 60px auto;
     text-align: center;
-    border-radius: 5px;
-    width: 150px;
-    height: 40px;
+    border-radius: 3px;
+    width: 200px;
+    height: 50px;
     background-color: $fa;
     color: $neutral;
     font-weight: bold; 
